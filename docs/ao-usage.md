@@ -3,41 +3,56 @@
 **Product:** Lost Movement  
 **Hackathon:** The Orchestra  
 **AO:** [aoagents.dev](https://aoagents.dev/) — **not** Arweave AO  
-**Run:** `qp-20260812T172446Z-d32d1d19`  
-**Date:** 2026-08-12
+**AO version:** 0.12.3 (stable, Apple silicon)  
+**Recorded:** 2026-08-12, Vitalie’s MacBook Pro, live AO window
 
-AO is the **workspace**. Lost Movement is the **object**. The demo video must show the Kanban / sessions. This quad-pipeline is **not** AO and must not appear on tape as if it were.
+AO is the **workspace**. Lost Movement is the **object**. The demo video must show this desktop app. The Grok quad-pipeline TUI is **not** AO.
 
-## Swarm layout
+## Install
 
-| Session | Job |
+| Item | Value |
 | --- | --- |
-| Research | Ranked five concepts; recommended SCORE |
-| Design | **Overrode** to Lost Movement (`01-plan.md`) |
-| Execute | Vite app, abandonment engine, 7-room walk, tests, submission pack |
-| Overwatch | Tests, rubric, ship/no-ship |
+| App | `/Applications/Agent Orchestrator.app` |
+| CLI | `~/.local/bin/ao` |
+| Data | `~/.ao/` |
+| Project id | `lost-movement` |
+| Path | `/Volumes/Seagate/Coding  Compete/projects/The Orchestra` |
+| Worker harness on tape | Claude Code Chat (Opus 4.8). Grok TUI needs `tmux`, which is not installed. |
 
-Inner execute agents: env-setup, baseline-code, validation, submission-path, env-setup-x2, ui-surface.
+## Board (photographed)
 
-## Cards the camera should see
+Project **Lost Movement** is selected. Sidebar shows three orange session dots plus **Scratch**. Top-right bell shows **3**. No pull request on any card.
 
-1. Ingest + denylist  
-2. Abandonment scorer  
-3. Curator (seven wings)  
-4. Room / plaque UI  
-5. Attic fixture  
-6. Tests  
-7. Submission pack  
+| Session id | Board name | Harness | CLI status | What the window showed |
+| --- | --- | --- | --- | --- |
+| `lost-movement-1` | **ao-proof** | claude-code | `needs_input` / `waiting_input` | Prompt: update `docs/ao-usage.md` and stop. Agent read the file, said the Local AO status section was outdated, produced **1 file changed +9/−8**. Composer: Working ~11m 43s. Activity: **Input Needed** → Created workspace. Still: `docs/ao-evidence/screenshots/sessions/lost-movement-1-ao-proof.jpg` |
+| `lost-movement-2` | **lost-attic** | claude-code | `needs_input` / `waiting_input` | Prompt: confirm Tonight’s attic / Untitled document (3). Ran 1 command + 5 tools, then 2 commands (**1 failed**). Checking curation of exhibit index 0. Composer: Working ~11m 48s. Activity: **Input Needed**. Still: `…/lost-movement-2-lost-attic.jpg` |
+| `lost-movement-3` | **npm-tests** | claude-code | `needs_input` / `waiting_input` | Prompt: run `npm test`, fix only if red. Said it would run tests; “Ran command”. Composer: Working ~11m 55s. Activity: **Input Needed**. Still: `…/lost-movement-3-npm-tests.jpg` |
 
-## Local AO status (2026-08-12)
+Worktrees: `~/.ao/data/worktrees/lost-movement/lost-movement-{1,2,3}` on branches `ao/lost-movement-{1,2,3}/root`.
 
-- Desktop app **not** in `/Applications`
-- `~/.ao` **absent**
-- Download: https://aoagents.dev/download/
-- This folder was not a git repo at first ship — `git init` is required before AO worktrees
+## What “Needs you” / “Input Needed” is
 
-**Human:** install AO, add this project, recreate the cards, film the live board.
+It is **not** a missing text box. The chat composer is empty on purpose.
 
-## Evidence stills
+AO puts a session in **Needs you** when the derived status is `needs_input`. On this machine that happened right after **Created workspace**. The middle of the window still says **Working** because a turn is in flight. The composer text is:
 
-See `docs/ao-evidence/screenshots/`. All boxes unchecked until AO is installed.
+> Agent is working — this sends when it finishes
+
+So there is nothing to type until the turn ends.
+
+The thing that actually wants a click is **not** the composer:
+
+1. **Bell (3)** in the top-right — open it. That is the notification / permission queue for the three sessions.
+2. If a card there says Allow / Approve / Continue, click it.
+3. On **ao-proof**, expand **1 file changed** if you want to review the `docs/ao-usage.md` edit. You do not have to merge it.
+4. Do **not** press Kill. Do **not** type in the composer while it says Working.
+
+If the bell is empty and the orange **Input Needed** row is the only signal: wait for Working to finish, then leave the three cards on the board. That is enough for the first 12 seconds of the demo tape. You do not owe these agents another prompt.
+
+## How to film
+
+1. Agent Orchestrator window, Lost Movement selected, three orange cards visible (ao-proof, lost-attic, npm-tests).
+2. Optional: click one card so the chat + **Input Needed** activity is on screen.
+3. Smash cut to `http://127.0.0.1:5173` → Tonight’s attic.
+4. Full script: `docs/demo-script.md`

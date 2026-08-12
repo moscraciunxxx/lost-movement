@@ -1,6 +1,7 @@
 node_modules/
 dist/
 .DS_Store
+._*
 *.local
 .vite/
 coverage/
@@ -8,5 +9,6 @@ coverage/
 .env.*
 !.env.example
 .quad-pipeline/
+docs/ao-evidence/session-ls.txt
 
 .ao/
