@@ -65,7 +65,7 @@ Official entry is **Discord `#orchestra-project-showcase` + a public X/LinkedIn 
 
 | Artifact | Status |
 | --- | --- |
-| Public GitHub | https://github.com/moscraciunxxx/lost-movement (created; needs one `git push`) |
+| Public GitHub | https://github.com/moscraciunxxx/lost-movement |
 | Demo video (must show AO Kanban) | Record from [`docs/demo-script.md`](docs/demo-script.md) using your voice takes |
 | X | [`docs/submission/x-post.md`](docs/submission/x-post.md) |
 | LinkedIn | [`docs/submission/linkedin-post.md`](docs/submission/linkedin-post.md) |
@@ -80,7 +80,7 @@ Hard stop: **13 August 2026, 19:00 IST** (13:30 UTC).
 
 1. Lu.ma + spider emoji — **done**.
 2. AO installed, project on the board — **done**.
-3. `git push` this folder to the public repo (SSH key / `gh auth login`).
+3. Public GitHub — **done**: https://github.com/moscraciunxxx/lost-movement
 4. Record the 90s video: live AO window, then `http://127.0.0.1:5173`.
 5. X/LinkedIn with `#agentorchestrator` `@aoagents` `@agent_wrapper`.
 6. Discord `#orchestra-project-showcase`.
