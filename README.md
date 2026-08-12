@@ -55,7 +55,7 @@ Criterion #1 is proof the team used AO’s **Kanban / sessions**. The demo video
 - Screenshot slots: [`docs/ao-evidence/`](docs/ao-evidence/)
 - 90-second script: [`docs/demo-script.md`](docs/demo-script.md)
 
-AO desktop was **not installed** on the build machine at ship time. Installing it and filming the board is a required human step.
+AO is installed at `/Applications/Agent Orchestrator.app`. Project id `lost-movement`. Three live sessions: **ao-proof**, **lost-attic**, **npm-tests**. Log: [`docs/ao-usage.md`](docs/ao-usage.md). Voice lines: [`docs/voice/vocabulaire.md`](docs/voice/vocabulaire.md).
 
 ---
 
@@ -65,8 +65,8 @@ Official entry is **Discord `#orchestra-project-showcase` + a public X/LinkedIn 
 
 | Artifact | Status |
 | --- | --- |
-| Public GitHub | **TODO** |
-| Demo video (must show AO Kanban) | **TODO** — [`docs/demo-script.md`](docs/demo-script.md) |
+| Public GitHub | https://github.com/moscraciunxxx/lost-movement (created; needs one `git push`) |
+| Demo video (must show AO Kanban) | Record from [`docs/demo-script.md`](docs/demo-script.md) using your voice takes |
 | X | [`docs/submission/x-post.md`](docs/submission/x-post.md) |
 | LinkedIn | [`docs/submission/linkedin-post.md`](docs/submission/linkedin-post.md) |
 | Discord | [`docs/submission/discord-showcase.md`](docs/submission/discord-showcase.md) |
@@ -76,11 +76,11 @@ Hard stop: **13 August 2026, 19:00 IST** (13:30 UTC).
 
 ---
 
-## Submission reminders (humans only)
+## Submission reminders
 
-1. Register on [Lu.ma](https://luma.com/iw1v5erp).
-2. Spider emoji in `#orchestra-announcements`.
-3. Install AO from [aoagents.dev/download](https://aoagents.dev/download/), add this repo, spawn Kanban cards.
-4. Public GitHub + 90s video that **shows the AO Kanban**.
+1. Lu.ma + spider emoji — **done**.
+2. AO installed, project on the board — **done**.
+3. `git push` this folder to the public repo (SSH key / `gh auth login`).
+4. Record the 90s video: live AO window, then `http://127.0.0.1:5173`.
 5. X/LinkedIn with `#agentorchestrator` `@aoagents` `@agent_wrapper`.
 6. Discord `#orchestra-project-showcase`.
