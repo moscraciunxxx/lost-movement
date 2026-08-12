@@ -12,3 +12,7 @@ coverage/
 docs/ao-evidence/session-ls.txt
 
 .ao/
+
+# Keep AO preview launch config in the repo
+.ao/*
+!.ao/launch.json
