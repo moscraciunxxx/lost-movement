@@ -1,0 +1,107 @@
+{
+  "corpus": "salt-stave",
+  "product": "Overture",
+  "primaryFixture": "fixtures/overture.json",
+  "engine": "Overture/SCORE: commits=measures, conflicted tension>=0.8, merges=cadence. Literary notes are bodies. Older STAVE shingle rules are documentary only.",
+  "sharedMotifs": [
+    {
+      "id": "silver-metronome-at-dusk",
+      "phrase": "silver metronome at dusk",
+      "documentIds": ["archivist", "tuner", "lightkeeper", "physician"],
+      "demo": "unison"
+    },
+    {
+      "id": "interval-of-a-fifth",
+      "phrase": "interval of a fifth",
+      "documentIds": ["archivist", "tuner", "hydrographer", "physician"],
+      "demo": "unison"
+    },
+    {
+      "id": "the-glass-conservatory",
+      "phrase": "the glass conservatory",
+      "documentIds": ["archivist", "hydrographer", "surveyor"],
+      "demo": "unison-then-dissonance"
+    },
+    {
+      "id": "house-pitch-of-a440",
+      "phrase": "house pitch of A440",
+      "documentIds": ["archivist", "tuner", "lightkeeper", "physician"],
+      "demo": "unison-then-dissonance"
+    },
+    {
+      "id": "salt-on-the-stave",
+      "phrase": "salt on the stave",
+      "documentIds": ["archivist", "tuner", "hydrographer"],
+      "demo": "unison"
+    },
+    {
+      "id": "the-inland-lighthouse",
+      "phrase": "the inland lighthouse",
+      "documentIds": ["archivist", "tuner", "lightkeeper", "surveyor"],
+      "demo": "unison-then-dissonance"
+    },
+    {
+      "id": "chamber-of-unplayed-notes",
+      "phrase": "chamber of unplayed notes",
+      "documentIds": ["lightkeeper", "surveyor", "physician"],
+      "demo": "unison"
+    }
+  ],
+  "contradictions": [
+    {
+      "id": "conservatory-exists",
+      "a": "archivist",
+      "b": "surveyor",
+      "claim": "Performed in the glass conservatory vs the glass conservatory was never built",
+      "cues": ["never"],
+      "expect": { "tension": "high" }
+    },
+    {
+      "id": "pitch-a440-vs-a432",
+      "a": "tuner",
+      "b": "lightkeeper",
+      "claim": "House pitch of A440 vs the house never tunes to A440 (keeps A432)",
+      "cues": ["never"],
+      "expect": { "tension": "high" }
+    },
+    {
+      "id": "inland-lighthouse",
+      "a": "archivist",
+      "b": "lightkeeper",
+      "claim": "Inland lighthouse kept the bars vs there is no inland lighthouse",
+      "cues": ["no", "not"],
+      "expect": { "tension": "high" }
+    },
+    {
+      "id": "tide-reaches",
+      "a": "archivist",
+      "b": "hydrographer",
+      "claim": "Sea climbed the steps vs the tide never reaches this coast",
+      "cues": ["never", "however"],
+      "expect": { "tension": "high" }
+    },
+    {
+      "id": "silence-instrument",
+      "a": "tuner",
+      "b": "physician",
+      "claim": "Silence is never an instrument vs silence is the first instrument",
+      "cues": ["never"],
+      "expect": { "tension": "high" }
+    },
+    {
+      "id": "lighthouse-pylon-vs-post",
+      "a": "tuner",
+      "b": "surveyor",
+      "claim": "Timing pylon (not at sea) vs painted triangulation post with no lamp",
+      "cues": ["not", "unlike"],
+      "expect": { "tension": "medium" }
+    }
+  ],
+  "demoBeats": [
+    "Load Sample Notes (this corpus). Six staves appear.",
+    "Shared phrases light up; those voices lock to a fifth / octave.",
+    "Solo the Archivist, then add the Surveyor — conservatory claim vs never-built should grind.",
+    "Add Tuner + Lightkeeper — A440 against A432 is an 8 Hz beat (the Physician says so).",
+    "Full ensemble: pulse + fever. That is the 90-second wow."
+  ]
+}

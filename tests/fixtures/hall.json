@@ -1,0 +1,91 @@
+{
+  "title": "Hall of Parallel Work",
+  "commits": [
+    {
+      "sha": "1111111111111111111111111111111111111111",
+      "author": "Mira Chen",
+      "email": "mira@local",
+      "timestamp": 1700000000,
+      "subject": "light the hall",
+      "body": "first lantern",
+      "files": [
+        { "path": "README.md", "added": 12, "deleted": 0 },
+        { "path": "src/main.ts", "added": 4, "deleted": 0 }
+      ],
+      "parents": []
+    },
+    {
+      "sha": "2222222222222222222222222222222222222222",
+      "author": "Jules Okonkwo",
+      "email": "jules@local",
+      "timestamp": 1700000100,
+      "subject": "gold staves",
+      "files": [
+        { "path": "src/styles/hall.css", "added": 40, "deleted": 2 }
+      ],
+      "parents": ["1111111111111111111111111111111111111111"]
+    },
+    {
+      "sha": "3333333333333333333333333333333333333333",
+      "author": "Nico Park",
+      "email": "nico@local",
+      "timestamp": 1700000200,
+      "subject": "parser for git log",
+      "files": [
+        { "path": "src/score/parse.ts", "added": 80, "deleted": 4 }
+      ],
+      "parents": ["2222222222222222222222222222222222222222"]
+    },
+    {
+      "sha": "4444444444444444444444444444444444444444",
+      "author": "Mira Chen",
+      "email": "mira@local",
+      "timestamp": 1700000300,
+      "subject": "docs for the concert",
+      "files": [
+        { "path": "docs/demo-script.md", "added": 30, "deleted": 0 }
+      ],
+      "parents": ["3333333333333333333333333333333333333333"]
+    },
+    {
+      "sha": "5555555555555555555555555555555555555555",
+      "author": "Ada Lovelace",
+      "email": "ada@local",
+      "timestamp": 1700000400,
+      "subject": "merge halls",
+      "body": "cadence",
+      "files": [
+        { "path": "src/main.ts", "added": 3, "deleted": 1 }
+      ],
+      "parents": [
+        "3333333333333333333333333333333333333333",
+        "4444444444444444444444444444444444444444"
+      ],
+      "isMerge": true
+    },
+    {
+      "sha": "6666666666666666666666666666666666666666",
+      "author": "Jules Okonkwo",
+      "email": "jules@local",
+      "timestamp": 1700000500,
+      "subject": "conflicted lighting",
+      "files": [
+        { "path": "src/score/audio.ts", "added": 8, "deleted": 8 },
+        { "path": "public/shot.png", "added": 0, "deleted": 0 }
+      ],
+      "parents": ["5555555555555555555555555555555555555555"],
+      "conflicted": true
+    },
+    {
+      "sha": "7777777777777777777777777777777777777777",
+      "author": "Nico Park",
+      "email": "nico@local",
+      "timestamp": 1700000600,
+      "subject": "rewrite the brass section",
+      "files": [
+        { "path": "src/score/metrics.ts", "added": 400, "deleted": 80 }
+      ],
+      "parents": ["6666666666666666666666666666666666666666"]
+    }
+  ]
+}

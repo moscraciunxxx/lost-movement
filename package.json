@@ -1,0 +1,25 @@
+{
+  "name": "lost-movement",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check:ao": "node scripts/check-ao-usage.mjs",
+    "check:readme": "node scripts/check-readme.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2",
+    "vite": "^8.2.1",
+    "vitest": "^4.1.10"
+  }
+}

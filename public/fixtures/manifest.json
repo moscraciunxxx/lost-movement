@@ -1,0 +1,74 @@
+{
+  "id": "salt-stave",
+  "title": "The Salt Stave",
+  "runId": "qp-20260812T172446Z-d32d1d19",
+  "product": "STAVE",
+  "description": "Six short voices from one coastal archive. Shared 3-word motifs should play in unison; negation contradictions should dissonate.",
+  "relativeToRepo": "fixtures/",
+  "relativeFromSrc": "../fixtures/",
+  "publicUrlBase": "/fixtures/",
+  "importHint": "import.meta.glob('../fixtures/*.md', { query: '?raw', eager: true, import: 'default' })",
+  "fetchHint": "fetch(new URL(entry.publicUrl, window.location.origin))",
+  "documents": [
+    {
+      "id": "archivist",
+      "title": "The Archivist",
+      "file": "01-archivist.md",
+      "relativePath": "fixtures/01-archivist.md",
+      "fromSrc": "../fixtures/01-archivist.md",
+      "publicUrl": "/fixtures/01-archivist.md",
+      "instrument": "cello",
+      "registerHz": 65.41
+    },
+    {
+      "id": "tuner",
+      "title": "The Tuner's Log",
+      "file": "02-tuner.md",
+      "relativePath": "fixtures/02-tuner.md",
+      "fromSrc": "../fixtures/02-tuner.md",
+      "publicUrl": "/fixtures/02-tuner.md",
+      "instrument": "viola",
+      "registerHz": 130.81
+    },
+    {
+      "id": "lightkeeper",
+      "title": "The Lightkeeper",
+      "file": "03-lightkeeper.md",
+      "relativePath": "fixtures/03-lightkeeper.md",
+      "fromSrc": "../fixtures/03-lightkeeper.md",
+      "publicUrl": "/fixtures/03-lightkeeper.md",
+      "instrument": "violin",
+      "registerHz": 196.0
+    },
+    {
+      "id": "hydrographer",
+      "title": "The Hydrographer",
+      "file": "04-hydrographer.md",
+      "relativePath": "fixtures/04-hydrographer.md",
+      "fromSrc": "../fixtures/04-hydrographer.md",
+      "publicUrl": "/fixtures/04-hydrographer.md",
+      "instrument": "bass",
+      "registerHz": 41.2
+    },
+    {
+      "id": "surveyor",
+      "title": "The Surveyor",
+      "file": "05-surveyor.md",
+      "relativePath": "fixtures/05-surveyor.md",
+      "fromSrc": "../fixtures/05-surveyor.md",
+      "publicUrl": "/fixtures/05-surveyor.md",
+      "instrument": "horn",
+      "registerHz": 87.31
+    },
+    {
+      "id": "physician",
+      "title": "The Conservatory Physician",
+      "file": "06-physician.md",
+      "relativePath": "fixtures/06-physician.md",
+      "fromSrc": "../fixtures/06-physician.md",
+      "publicUrl": "/fixtures/06-physician.md",
+      "instrument": "clarinet",
+      "registerHz": 146.83
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "title": "The Salt Stave",
+  "subtitle": "A coastal archive that cannot agree with itself",
+  "product": "Overture",
+  "runId": "qp-20260812T172446Z-d32d1d19",
+  "sourceNotes": [
+    "fixtures/01-archivist.md",
+    "fixtures/02-tuner.md",
+    "fixtures/03-lightkeeper.md",
+    "fixtures/04-hydrographer.md",
+    "fixtures/05-surveyor.md",
+    "fixtures/06-physician.md"
+  ],
+  "publicUrl": "/fixtures/overture.json",
+  "fromSrc": "../fixtures/overture.json",
+  "authors": [
+    { "name": "Ada Vale", "role": "Archivist", "familyBias": "strings" },
+    { "name": "Jules Okonkwo", "role": "Tuner", "familyBias": "brass" },
+    { "name": "Nico Hart", "role": "Lightkeeper", "familyBias": "brass" },
+    { "name": "Mira Chen", "role": "Hydrographer", "familyBias": "woodwinds" },
+    { "name": "Rowan Peck", "role": "Surveyor", "familyBias": "woodwinds" },
+    { "name": "Ilya Sen", "role": "Physician", "familyBias": "brass" }
+  ],
+  "commits": [
+    {
+      "sha": "a11ce0cab1net000000000000000000000000001",
+      "author": "Ada Vale",
+      "email": "ada@conservatory.local",
+      "timestamp": 1770000000,
+      "subject": "open the cabinet after the storm",
+      "body": "We found the silver metronome at dusk still ticking in a drawer of damp linen. The house pitch of A440 had been written on the lid.",
+      "files": [
+        { "path": "README.md", "added": 28, "deleted": 0 },
+        { "path": "docs/program.md", "added": 40, "deleted": 0 }
+      ],
+      "parents": [],
+      "isMerge": false
+    },
+    {
+      "sha": "b440tune00000000000000000000000000000002",
+      "author": "Jules Okonkwo",
+      "email": "jules@conservatory.local",
+      "timestamp": 1770003600,
+      "subject": "calibrate house pitch of A440",
+      "body": "The silver metronome at dusk is not a poem. I stacked the interval of a fifth (3:2) to E. Beating: none.",
+      "files": [
+        { "path": "src/pitch.ts", "added": 64, "deleted": 0 },
+        { "path": "docs/tuner.md", "added": 36, "deleted": 0 }
+      ],
+      "parents": ["a11ce0cab1net000000000000000000000000001"],
+      "isMerge": false
+    },
+    {
+      "sha": "c0ncertg1ass0000000000000000000000000003",
+      "author": "Ada Vale",
+      "email": "ada@conservatory.local",
+      "timestamp": 1770007200,
+      "subject": "the glass conservatory held its last concert",
+      "body": "I have the program. I was there. Salt on the stave — the ink feathered. The inland lighthouse blinked through the west windows.",
+      "files": [
+        { "path": "conservatory.html", "added": 88, "deleted": 0 },
+        { "path": "docs/conservatory.md", "added": 52, "deleted": 0 },
+        { "path": "src/styles/hall.css", "added": 30, "deleted": 0 }
+      ],
+      "parents": ["b440tune00000000000000000000000000000002"],
+      "isMerge": false
+    },
+    {
+      "sha": "d5a1tsta00000000000000000000000000000004",
+      "author": "Jules Okonkwo",
+      "email": "jules@conservatory.local",
+      "timestamp": 1770010800,
+      "subject": "salt on the stave is a maintenance problem",
+      "body": "Chloride films flatten harmonics. Silence is never an instrument. Silence is a defect in the room.",
+      "files": [
+        { "path": "src/bridges.ts", "added": 22, "deleted": 2 },
+        { "path": "docs/salt.md", "added": 18, "deleted": 0 }
+      ],
+      "parents": ["c0ncertg1ass0000000000000000000000000003"],
+      "isMerge": false
+    },
+    {
+      "sha": "e432neve00000000000000000000000000000005",
+      "author": "Nico Hart",
+      "email": "nico@lighthouse.local",
+      "timestamp": 1770014400,
+      "subject": "the house never tunes to A440",
+      "body": "We keep A432 because the foghorn already occupies the beating. The silver metronome at dusk is a lie they tell visitors.",
+      "files": [
+        { "path": "src/pitch.ts", "added": 41, "deleted": 38 },
+        { "path": "docs/lightkeeper.md", "added": 24, "deleted": 0 }
+      ],
+      "parents": ["d5a1tsta00000000000000000000000000000004"],
+      "isMerge": false,
+      "conflicted": true
+    },
+    {
+      "sha": "f71de00000000000000000000000000000000006",
+      "author": "Mira Chen",
+      "email": "mira@shelf.local",
+      "timestamp": 1770018000,
+      "subject": "the tide never reaches this coast",
+      "body": "However, I keep finding salt on the stave upstairs. The glass conservatory sits above any theoretical waterline. The interval of a fifth in the harbor boom is a harbor fact.",
+      "files": [
+        { "path": "data/tide.yml", "added": 55, "deleted": 0 },
+        { "path": "docs/hydrographer.md", "added": 26, "deleted": 0 }
+      ],
+      "parents": ["e432neve00000000000000000000000000000005"],
+      "isMerge": false
+    },
+    {
+      "sha": "a1n1and000000000000000000000000000000007",
+      "author": "Ada Vale",
+      "email": "ada@conservatory.local",
+      "timestamp": 1770021600,
+      "subject": "the inland lighthouse kept our bars honest",
+      "body": "Absurd as a chapel in a wheat field. They will tell you later that the room was a rumor. I still hear the fifth.",
+      "files": [
+        { "path": "docs/lighthouse.md", "added": 20, "deleted": 0 },
+        { "path": "docs/program.md", "added": 6, "deleted": 1 }
+      ],
+      "parents": ["f71de00000000000000000000000000000000006"],
+      "isMerge": false
+    },
+    {
+      "sha": "b0n01amp00000000000000000000000000000008",
+      "author": "Nico Hart",
+      "email": "nico@lighthouse.local",
+      "timestamp": 1770025200,
+      "subject": "there is no inland lighthouse",
+      "body": "Forget the inland lighthouse. I hear a chamber of unplayed notes in the lantern gallery. Stop inventing chapels in fields.",
+      "files": [
+        { "path": "docs/lighthouse.md", "added": 17, "deleted": 14 }
+      ],
+      "parents": ["a1n1and000000000000000000000000000000007"],
+      "isMerge": false,
+      "conflicted": true
+    },
+    {
+      "sha": "cneverbu11t00000000000000000000000000009",
+      "author": "Rowan Peck",
+      "email": "rowan@cadastre.local",
+      "timestamp": 1770028800,
+      "subject": "the glass conservatory was never built",
+      "body": "Unlike the watercolor in the grant file: four stake-holes. I filed the chamber of unplayed notes under clerical poetry. I argue with concrete.",
+      "files": [
+        { "path": "conservatory.html", "added": 0, "deleted": 480 },
+        { "path": "docs/conservatory.md", "added": 3, "deleted": 52 },
+        { "path": "docs/surveyor.md", "added": 22, "deleted": 0 },
+        { "path": "plat.svg", "added": 14, "deleted": 0 }
+      ],
+      "parents": ["b0n01amp00000000000000000000000000000008"],
+      "isMerge": false
+    },
+    {
+      "sha": "dmergeada0000000000000000000000000000010",
+      "author": "Ada Vale",
+      "email": "ada@conservatory.local",
+      "timestamp": 1770032400,
+      "subject": "merge: memory and the cadastral map",
+      "body": "I do not argue with concrete. I still have resin under my nails. Keep both folders: the concert and the grass rectangle.",
+      "files": [
+        { "path": "README.md", "added": 8, "deleted": 2 },
+        { "path": "docs/program.md", "added": 4, "deleted": 1 }
+      ],
+      "parents": [
+        "cneverbu11t00000000000000000000000000009",
+        "c0ncertg1ass0000000000000000000000000003"
+      ],
+      "isMerge": true
+    },
+    {
+      "sha": "elockthud0000000000000000000000000000011",
+      "author": "Jules Okonkwo",
+      "email": "jules@conservatory.local",
+      "timestamp": 1770036000,
+      "subject": "lock the house pitch so nobody retunes to A432",
+      "body": "Anyone who retunes this house to A432 is vandalizing the archive.",
+      "files": [
+        { "path": "package-lock.json", "added": 210, "deleted": 4 },
+        { "path": "mark.png", "added": 0, "deleted": 0 }
+      ],
+      "parents": ["dmergeada0000000000000000000000000000010"],
+      "isMerge": false
+    },
+    {
+      "sha": "ffever0000000000000000000000000000000012",
+      "author": "Ilya Sen",
+      "email": "ilya@ward.local",
+      "timestamp": 1770039600,
+      "subject": "silence is the first instrument",
+      "body": "They say silence is never an instrument. I say silence is the first instrument. Shared motifs are pulse. Contradictions are fever. The fever is the concert.",
+      "files": [
+        { "path": "src/diagnosis.ts", "added": 48, "deleted": 0 },
+        { "path": "docs/physician.md", "added": 34, "deleted": 0 }
+      ],
+      "parents": ["elockthud0000000000000000000000000000011"],
+      "isMerge": false
+    },
+    {
+      "sha": "a5thcadence00000000000000000000000000013",
+      "author": "Ilya Sen",
+      "email": "ilya@ward.local",
+      "timestamp": 1770043200,
+      "subject": "merge: interval of a fifth against the eight-hertz beat",
+      "body": "House pitch of A440 versus A432 is not taste. Play both claims at once. Do not cure the fever before the concert.",
+      "files": [
+        { "path": "src/pitch.ts", "added": 12, "deleted": 9 },
+        { "path": "src/diagnosis.ts", "added": 7, "deleted": 1 }
+      ],
+      "parents": [
+        "ffever0000000000000000000000000000000012",
+        "e432neve00000000000000000000000000000005"
+      ],
+      "isMerge": true
+    }
+  ]
+}

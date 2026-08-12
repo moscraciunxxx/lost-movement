@@ -1,0 +1,103 @@
+.score {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0.85rem 0 0.4rem;
+}
+
+.score__ledger {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 1.35rem 0.45rem;
+  font-size: var(--fs-kicker);
+  letter-spacing: var(--track-caps);
+  text-transform: uppercase;
+  color: var(--brass-deep);
+}
+
+.score__piece {
+  color: var(--brass-bright);
+  letter-spacing: 0.08em;
+  text-transform: none;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.score__scroll {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: 0 0.6rem 0.6rem 0.35rem;
+}
+
+.score__scroll::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+.score__scroll::-webkit-scrollbar-thumb {
+  background: rgba(201, 164, 92, 0.35);
+}
+
+.score svg {
+  display: block;
+  width: max(100%, var(--score-w, 920px));
+  height: auto;
+}
+
+.score .bar {
+  cursor: pointer;
+}
+
+.score .bar:focus {
+  outline: none;
+}
+
+.score .bar:focus-visible .hit {
+  stroke: var(--brass-bright);
+  stroke-width: 1.4;
+  stroke-opacity: 1;
+}
+
+.score .mote {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: rgba(237, 217, 160, 0.45);
+  pointer-events: none;
+  animation: mote 9s linear infinite;
+}
+
+@keyframes mote {
+  0% { transform: translateY(8px); opacity: 0; }
+  12% { opacity: 0.6; }
+  100% { transform: translateY(-220px); opacity: 0; }
+}
+
+.score-wrap {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  background:
+    radial-gradient(ellipse 50% 80% at 50% 0%, rgba(243, 214, 150, 0.07), transparent 70%),
+    linear-gradient(180deg, #16110d 0%, #0c0a08 100%);
+}
+
+.score-wrap::after {
+  content: "";
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: 0.35rem;
+  height: 7px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, transparent, #5c451c 12%, #c9a45c 50%, #5c451c 88%, transparent);
+  opacity: 0.35;
+  pointer-events: none;
+}

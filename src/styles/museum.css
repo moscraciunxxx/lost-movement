@@ -1,0 +1,190 @@
+:root {
+  --house: #0b0a08;
+  --ash: #c4b8a5;
+  --gilt: #b08d57;
+  --filament: #e8d7a8;
+  --oxblood: #6b2c2c;
+  --ink: #1a1410;
+  --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, "Times New Roman", serif;
+  --font-label: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --font-manuscript: "Iowan Old Style", Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--house);
+  color: var(--ash);
+  font-family: var(--font-manuscript);
+}
+
+#app { min-height: 100vh; }
+
+.foyer, .room, .catalogue, .colophon {
+  min-height: 100vh;
+  padding: 3.2rem 8vw 4rem;
+}
+
+.foyer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: radial-gradient(ellipse at 50% 18%, rgba(232, 215, 168, 0.14), transparent 42%);
+}
+
+.lockup {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(2.4rem, 7vw, 4.4rem);
+  color: var(--filament);
+  margin: 0 0 0.4rem;
+  letter-spacing: 0.02em;
+}
+
+.tag {
+  font-family: var(--font-label);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  color: var(--gilt);
+  margin: 0 0 2.4rem;
+}
+
+button {
+  font-family: var(--font-label);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  background: transparent;
+  color: var(--filament);
+  border: 1px solid var(--gilt);
+  padding: 0.75rem 1.2rem;
+  cursor: pointer;
+}
+
+button:hover, button:focus-visible {
+  border-color: var(--filament);
+  outline: none;
+}
+
+.drop {
+  margin-top: 1.2rem;
+  color: var(--gilt);
+  font-size: 0.78rem;
+}
+
+.room {
+  display: grid;
+  place-items: center;
+  text-align: left;
+}
+
+.lamp {
+  width: 2px;
+  height: 18vh;
+  background: linear-gradient(to bottom, transparent, var(--filament));
+  box-shadow: 0 22px 80px 20px rgba(232, 215, 168, 0.18);
+  margin: 0 auto 2.2rem;
+}
+
+.plaque {
+  max-width: 34rem;
+}
+
+.plaque-title {
+  font-family: var(--font-label);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.86rem;
+  color: var(--gilt);
+  margin: 0 0 0.45rem;
+}
+
+.plaque-date, .index {
+  font-family: var(--font-label);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.66rem;
+  color: #8a7b64;
+}
+
+.coda {
+  font-style: italic;
+  color: var(--filament);
+  margin: 0.5rem 0 1.4rem;
+}
+
+.excerpt {
+  font-size: 1.2rem;
+  line-height: 1.55;
+  max-width: 32rem;
+  min-height: 4.5rem;
+}
+
+.stamp {
+  display: inline-block;
+  margin-top: 1.2rem;
+  border: 1px solid var(--oxblood);
+  color: var(--oxblood);
+  letter-spacing: 0.2em;
+  font-size: 0.62rem;
+  padding: 0.2rem 0.45rem;
+}
+
+.nav {
+  position: fixed;
+  bottom: 1.4rem;
+  left: 8vw;
+  right: 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalogue {
+  background: #efe6d4;
+  color: var(--ink);
+}
+
+.catalogue h1 {
+  font-style: italic;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.entry {
+  border-top: 1px solid #b08d57;
+  padding: 0.9rem 0;
+}
+
+.entry h2 {
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 0.25rem;
+}
+
+.colophon-line {
+  margin-top: 2rem;
+  font-style: italic;
+}
+
+@media print {
+  .nav, .foyer, .room { display: none !important; }
+  .catalogue { background: white; color: black; }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}

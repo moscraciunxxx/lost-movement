@@ -1,0 +1,408 @@
+{
+  "title": "Lantern \u2014 a week in three sections",
+  "blurb": "Bundled fixture. Authors Mira, Jules, Nico. One conflicted bar. One merge cadence. Click any measure.",
+  "commits": [
+    {
+      "sha": "ed57ec97488b9e643306a3dd0f2d5a5e3e39fd78",
+      "author": "Mira Chen",
+      "email": "mira@lantern.local",
+      "timestamp": 1710003600,
+      "subject": "light the hall",
+      "body": "The first lantern. A repo is a dark room until someone writes README.",
+      "files": [
+        {
+          "path": "README.md",
+          "added": 18,
+          "deleted": 0,
+          "patch": "+# Lantern\n+A small hall for hearing git.\n"
+        }
+      ],
+      "parents": [],
+      "isMerge": false,
+      "conflicted": false
+    },
+    {
+      "sha": "97a5fe1d4f9e5aa034243e118c3ef9abf2f585cf",
+      "author": "Mira Chen",
+      "email": "mira@lantern.local",
+      "timestamp": 1710007200,
+      "subject": "raise the shell",
+      "body": null,
+      "files": [
+        {
+          "path": "index.html",
+          "added": 12,
+          "deleted": 0,
+          "patch": "+<!doctype html>\n+<title>Lantern</title>\n"
+        },
+        {
+          "path": "src/main.ts",
+          "added": 8,
+          "deleted": 0,
+          "patch": "+const app = document.querySelector('#app')\n"
+        }
+      ],
+      "parents": [],
+      "isMerge": false,
+      "conflicted": false
+    },
+    {
+      "sha": "662ffb227e65fa4ae1a3ef4a20f19ad4e575e713",
+      "author": "Jules Okonkwo",
+      "email": "jules@lantern.local",
+      "timestamp": 1710010800,
+      "subject": "paint the velvet",
+      "body": "Warm gold on matte black. No dashboard chrome.",
+      "files": [
+        {
+          "path": "src/styles/hall.css",
+          "added": 46,
+          "deleted": 0,
+          "patch": "+body { background:#0b0906; color:#e8d7b0 }\n"
+        }
+      ],
+      "parents": [],
+      "isMerge": false,
+      "conflicted": false
+    },
+    {
+      "sha": "f0919b805c101e1445303b72323b840d9b5183fc",
+      "author": "Nico Varga",
+      "email": "nico@lantern.local",
+      "timestamp": 1710014400,
+      "subject": "parse the book of days",
+      "body": null,
+      "files": [
+        {
+          "path": "src/score/parse.ts",
+          "added": 40,
+          "deleted": 0,
+          "patch": "+export function parseGitLog(raw: string) { return [] }\n"
+        },
+        {
+          "path": "tests/parse.test.ts",
+          "added": 16,
+          "deleted": 0,
+          "patch": "+it('parses', () => {})\n"
+        }
+      ],
+      "parents": [],
+      "isMerge": false,
+      "conflicted": false
+    },
+    {
+      "sha": "f4ab0337a7228c5ea7c59a9221bbbf15593953db",
+      "author": "Mira Chen",
+      "email": "mira@lantern.local",
+      "timestamp": 1710018000,
+      "subject": "name the measures",
+      "body": null,
+      "files": [
+        {
+          "path": "src/score/types.ts",
+          "added": 32,
+          "deleted": 0,
+          "patch": "+export type Family = 'strings' | 'brass'\n"
+        },
+        {
+          "path": "src/score/build.ts",
+          "added": 28,
+          "deleted": 0,
+          "patch": "+export function buildScore() {}\n"
+        }
+      ],
+      "parents": [],
+      "isMerge": false,
+      "conflicted": false
+    },
+    {
+      "sha": "900492283924b603535207509d1e07c824fcd8ce",
+      "author": "Jules Okonkwo",
+      "email": "jules@lantern.local",
+      "timestamp": 1710021600,
+      "subject": "draw the staves",
+      "body": null,
+      "files": [
+        {
+          "path": "src/ui/staves.ts",
+          "added": 55,
+          "deleted": 0,
+          "patch": "+export function drawStaff() {}\n"
+        },
+        {
+          "path": "src/styles/hall.css",
+          "added": 22,
+          "deleted": 4,
+          "patch": "+.staff { stroke:#d4af37 }\n"
+        }
+      ],
+      "parents": [],
+      "isMerge": false,
+      "conflicted": false
+    },
+    {
+      "sha": "7cd108d32fe9832061ae52a32bf9077769b29e8b",
+      "author": "Nico Varga",
+      "email": "nico@lantern.local",
+      "timestamp": 1710025200,
+      "subject": "prove the mapping",
+      "body": "Loud must mean something a stranger can point at.",
+      "files": [
+        {
+          "path": "tests/score.test.ts",
+          "added": 48,
+          "deleted": 2,
+          "patch": "+it('huge commit is loud', () => {})\n"
+        }
+      ],
+      "parents": [],
+      "isMerge": false,
+      "conflicted": false
+    },
+    {
+      "sha": "8f2782334ac7706f176a7c9c790c9f7db3ddab5f",
+      "author": "Jules Okonkwo",
+      "email": "jules@lantern.local",
+      "timestamp": 1710028800,
+      "subject": "flood the hall with gold",
+      "body": "A too-large visual pass. You can hear it.",
+      "files": [
+        {
+          "path": "src/styles/hall.css",
+          "added": 260,
+          "deleted": 40,
+          "patch": "+/* chandelier */\n+.glow { box-shadow: 0 0 80px #d4af37 }\n"
+        },
+        {
+          "path": "public/velvet.svg",
+          "added": 80,
+          "deleted": 0,
+          "patch": "+<svg></svg>\n"
+        }
+      ],
+      "parents": [],
+      "isMerge": false,
+      "conflicted": false
+    },
+    {
+      "sha": "01d1f263ab26d66ce1e2a4cec40e1c90b2fe350f",
+      "author": "Mira Chen",
+      "email": "mira@lantern.local",
+      "timestamp": 1710032400,
+      "subject": "two clocks for tempo",
+      "body": null,
+      "files": [
+        {
+          "path": "src/score/transport.ts",
+          "added": 20,
+          "deleted": 6,
+          "patch": "+export const tempo = 120\n"
+        }
+      ],
+      "parents": [],
+      "isMerge": false,
+      "conflicted": false
+    },
+    {
+      "sha": "6186ac57ceb2807a7511a6aa3e0f098c42d6f93e",
+      "author": "Nico Varga",
+      "email": "nico@lantern.local",
+      "timestamp": 1710036000,
+      "subject": "the other clock",
+      "body": "Disagree: tempo belongs to the bar, not the hall.",
+      "files": [
+        {
+          "path": "src/score/transport.ts",
+          "added": 18,
+          "deleted": 14,
+          "patch": "+export const tempo = 72\n"
+        }
+      ],
+      "parents": [],
+      "isMerge": false,
+      "conflicted": true
+    },
+    {
+      "sha": "fd81a712e1a14beb0d04b9cf75b5d0bb37b7205c",
+      "author": "Jules Okonkwo",
+      "email": "jules@lantern.local",
+      "timestamp": 1710039600,
+      "subject": "resolve the clocks",
+      "body": "Cadence. 88bpm. Neither of you were wrong.",
+      "files": [
+        {
+          "path": "src/score/transport.ts",
+          "added": 12,
+          "deleted": 12,
+          "patch": "+export const tempo = 88\n"
+        }
+      ],
+      "parents": [],
+      "isMerge": false,
+      "conflicted": false
+    },
+    {
+      "sha": "e2c09bd0579af934a075c61743db53f793c70b2b",
+      "author": "Mira Chen",
+      "email": "mira@lantern.local",
+      "timestamp": 1710043200,
+      "subject": "merge the week",
+      "body": null,
+      "files": [
+        {
+          "path": "src/main.ts",
+          "added": 14,
+          "deleted": 3,
+          "patch": "+mountHall()\n"
+        },
+        {
+          "path": "index.html",
+          "added": 4,
+          "deleted": 1,
+          "patch": "+<div id=app></div>\n"
+        }
+      ],
+      "parents": [],
+      "isMerge": false,
+      "conflicted": false
+    },
+    {
+      "sha": "b33658aab44f15fce6162d129283b5ac1ed75693",
+      "author": "Nico Varga",
+      "email": "nico@lantern.local",
+      "timestamp": 1710046800,
+      "subject": "bake a fixture so the hall is never empty",
+      "body": null,
+      "files": [
+        {
+          "path": "fixtures/overture/history.json",
+          "added": 90,
+          "deleted": 0,
+          "patch": "+{ \"title\": \"Lantern\" }\n"
+        }
+      ],
+      "parents": [],
+      "isMerge": false,
+      "conflicted": false
+    },
+    {
+      "sha": "10b7ef1cf55b6e14e29b8a52b297dd561f2bf53b",
+      "author": "Mira Chen",
+      "email": "mira@lantern.local",
+      "timestamp": 1710050400,
+      "subject": "give the families breath",
+      "body": null,
+      "files": [
+        {
+          "path": "src/score/audio.ts",
+          "added": 70,
+          "deleted": 0,
+          "patch": "+export class HallAudio {}\n"
+        }
+      ],
+      "parents": [],
+      "isMerge": false,
+      "conflicted": false
+    },
+    {
+      "sha": "28d6f5365f9238d3966801d100e75e69c8ae2b53",
+      "author": "Jules Okonkwo",
+      "email": "jules@lantern.local",
+      "timestamp": 1710054000,
+      "subject": "mute a section",
+      "body": "Take Jules out of the week and the brass goes dark.",
+      "files": [
+        {
+          "path": "src/ui/sections.ts",
+          "added": 24,
+          "deleted": 0,
+          "patch": "+export function mute(name) {}\n"
+        },
+        {
+          "path": "src/score/build.ts",
+          "added": 10,
+          "deleted": 2,
+          "patch": "+export function withMute() {}\n"
+        }
+      ],
+      "parents": [],
+      "isMerge": false,
+      "conflicted": false
+    },
+    {
+      "sha": "75b2d3690b3e2bb1251de0e47398036c5470a153",
+      "author": "Nico Varga",
+      "email": "nico@lantern.local",
+      "timestamp": 1710057600,
+      "subject": "click a bar, see the wound",
+      "body": null,
+      "files": [
+        {
+          "path": "src/ui/inspector.ts",
+          "added": 36,
+          "deleted": 0,
+          "patch": "+export function showHunk() {}\n"
+        },
+        {
+          "path": "src/score/parse.ts",
+          "added": 8,
+          "deleted": 1,
+          "patch": "+// keep patches\n"
+        }
+      ],
+      "parents": [],
+      "isMerge": false,
+      "conflicted": false
+    },
+    {
+      "sha": "74a545c2cbb8c7560faaf8e03bd6a898fc0c1701",
+      "author": "Mira Chen",
+      "email": "mira@lantern.local",
+      "timestamp": 1710061200,
+      "subject": "one command",
+      "body": null,
+      "files": [
+        {
+          "path": "package.json",
+          "added": 20,
+          "deleted": 4,
+          "patch": "+{ \"scripts\": { \"dev\": \"vite\" } }\n"
+        },
+        {
+          "path": "README.md",
+          "added": 30,
+          "deleted": 6,
+          "patch": "+# Overture\n"
+        }
+      ],
+      "parents": [],
+      "isMerge": false,
+      "conflicted": false
+    },
+    {
+      "sha": "7de789f86ee95cfa88fd051c5ee997c955f54743",
+      "author": "Jules Okonkwo",
+      "email": "jules@lantern.local",
+      "timestamp": 1710064800,
+      "subject": "dim the house lights",
+      "body": null,
+      "files": [
+        {
+          "path": "src/styles/hall.css",
+          "added": 18,
+          "deleted": 8,
+          "patch": "+.house { opacity: .92 }\n"
+        },
+        {
+          "path": "src/ui/app.ts",
+          "added": 40,
+          "deleted": 5,
+          "patch": "+export function mount() {}\n"
+        }
+      ],
+      "parents": [],
+      "isMerge": false,
+      "conflicted": false
+    }
+  ]
+}

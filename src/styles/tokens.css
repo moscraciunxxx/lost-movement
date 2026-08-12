@@ -1,0 +1,61 @@
+:root {
+  /* Stage */
+  --void: #070605;
+  --pit: #0e0b08;
+  --velvet: #1a1012;
+  --velvet-deep: #12090b;
+  --stage: #14100c;
+  --rail: #2a2218;
+
+  /* Metals + ink */
+  --brass: #c9a45c;
+  --brass-bright: #edd9a0;
+  --brass-deep: #8a6a32;
+  --brass-ink: #5c451c;
+  --copper: #b56a3a;
+  --oxblood: #8f2d2a;
+  --oxblood-soft: #c45a4e;
+  --sage: #7d8f6e;
+  --ink: #1b1610;
+  --ink-soft: #4a4034;
+
+  /* Program paper */
+  --paper: #efe4cf;
+  --paper-2: #e4d4b4;
+  --paper-shadow: #c4b18c;
+  --paper-rule: rgba(27, 22, 16, 0.16);
+
+  /* Family inks */
+  --fam-strings: #e4d3ae;
+  --fam-brass: #e0b15a;
+  --fam-wood: #8fa87a;
+  --fam-perc: #c17a4a;
+
+  /* Type */
+  --font-display: "Fraunces", "Iowan Old Style", Palatino, "Palatino Linotype", "Times New Roman", serif;
+  --font-text: "Newsreader", "Iowan Old Style", Palatino, "Times New Roman", serif;
+  --font-mono: "IBM Plex Mono", "Source Code Pro", ui-monospace, monospace;
+
+  --fs-kicker: 0.68rem;
+  --fs-body: 1.02rem;
+  --fs-measure: clamp(2.4rem, 5vw, 3.9rem);
+
+  --track-wide: 0.22em;
+  --track-caps: 0.16em;
+
+  --pad: 1.5rem;
+  --gap: 1.15rem;
+  --radius-ticket: 2px;
+  --focus: 2px solid var(--brass-bright);
+  --focus-off: 3px;
+
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --spot: rgba(243, 214, 150, 0.11);
+
+  color-scheme: dark;
+}
+
+[data-family="strings"] { --family: var(--fam-strings); }
+[data-family="brass"] { --family: var(--fam-brass); }
+[data-family="woodwinds"] { --family: var(--fam-wood); }
+[data-family="percussion"] { --family: var(--fam-perc); }

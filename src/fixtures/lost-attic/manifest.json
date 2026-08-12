@@ -1,0 +1,85 @@
+{
+  "title": "Tonight's attic",
+  "nowMs": 1775520000000,
+  "expectedIds": [
+    "Untitled document (3).md",
+    "letter-unsent.md",
+    "final_final_v7.md",
+    "notes-2am.md",
+    "chapter-4.md",
+    "readme-empty-project.md",
+    "photo-caption.md"
+  ],
+  "files": [
+    {
+      "path": "Untitled document (3).md",
+      "text": "# Untitled document (3)\n\nThe second theme enters in the left hand and then it\n",
+      "mtimeMs": 1739923200000
+    },
+    {
+      "path": "letter-unsent.md",
+      "text": "# Letter unsent\n\nDear M.,\n\nI walked the pier twice and still did not send this. The stamp is in the drawer\n",
+      "mtimeMs": 1751328000000
+    },
+    {
+      "path": "final_final_v7.md",
+      "text": "# FINAL_FINAL_v7\n\n## Ship plan\n\nTODO: write the actual product\n\n## Notes\n\n",
+      "mtimeMs": 1759104000000
+    },
+    {
+      "path": "notes-2am.md",
+      "text": "# notes 2am\n\nwip scratch\n\nif the drone is ugly ship silence \u2014 I keep meaning to\n",
+      "mtimeMs": 1747008000000
+    },
+    {
+      "path": "chapter-4.md",
+      "text": "# Chapter 4\n\nThey reached the landing and the lamp was already out. She opened the folder anyway\n",
+      "mtimeMs": 1732320000000
+    },
+    {
+      "path": "readme-empty-project.md",
+      "text": "# lantern-app\n\nA new project.\n\n## Getting started\n\n",
+      "mtimeMs": 1756512000000
+    },
+    {
+      "path": "photo-caption.md",
+      "text": "# attic-photo\n\nThe metronome in the linen drawer, still ticking after the storm, no one in the frame\n",
+      "mtimeMs": 1740096000000
+    },
+    {
+      "path": "complete-essay.md",
+      "text": "# Evening programme\n\nThis essay is finished, recent, and pointed at by the others. It mentions the lantern-app\nreadme and the physician's cabinet so it is not isolated. It ends properly.\n\nThe hall is closed for the night.\n",
+      "mtimeMs": 1775260800000
+    },
+    {
+      "path": "06-physician.md",
+      "text": "# The Conservatory Physician\n\nDiagnosis of a house that cannot agree with itself.\n\nThe silver metronome at dusk is a shared hallucination with a steel heart: four witnesses, one object, two ontologies. When voices name the same three words they are in unison \u2014 the interval of a fifth, if you will. When they name the same object and deny it, they are a minor second.\n\nHouse pitch of A440 versus A432 is not taste. It is an eight-hertz beat, audible, rude, useful. Play both claims at once and the room will tell you it is sick.\n\nThey say silence is never an instrument. I say silence is the first instrument. The rest is decoration. A chamber of unplayed notes is not a filing error; it is the only honest score: tension held, not resolved.\n\nTreat the archive as a body. Shared motifs are pulse. Contradictions are fever. Do not cure the fever before the concert. The fever is the concert.\n",
+      "mtimeMs": 1772064000000
+    },
+    {
+      "path": "01-archivist.md",
+      "text": "# The Archivist\n\nWe opened the cabinet after the storm and found the silver metronome at dusk still ticking in a drawer of damp linen. The house pitch of A440 had been written on the lid in a clerk's patient hand, as if a building could remember a frequency. Down the corridor, the glass conservatory held its last concert like a breath: six chairs, no audience, resin on the floor like amber.\n\nI have the program. I was there. The cello took the interval of a fifth from the horn and would not give it back. Salt on the stave \u2014 someone had wept, or the sea had climbed the steps; the ink feathered where the notes should have been clean. The inland lighthouse, absurd as a chapel in a wheat field, blinked through the west windows and kept our bars honest.\n\nThey will tell you later that the room was a rumor. I still have resin under my nails. I still hear the fifth.\n",
+      "mtimeMs": 1772064000000
+    },
+    {
+      "path": "05-surveyor.md",
+      "text": "# The Surveyor\n\nI walked the lot with a chain and a bored apprentice. The glass conservatory was never built.\n\nUnlike the watercolor in the grant file, there is no iron frame, no roof of panes, no floor of resin. There is a rectangle of poorer grass and four stake-holes. The inland lighthouse on the plat is a triangulation mark \u2014 a painted post. It has no lamp.\n\nI filed the chamber of unplayed notes under clerical poetry. It is a folder of blank staves some donor paid to have bound. They are not haunted. They are unused inventory.\n\nIf musicians insist they performed here, they performed in a room that is not on the cadastral map. I do not argue with memory. I argue with concrete.\n",
+      "mtimeMs": 1772064000000
+    },
+    {
+      "path": "04-hydrographer.md",
+      "text": "# The Hydrographer\n\nTide table, coastwise. I must be blunt: the tide never reaches this coast. The shelf drops too late and the standing wave breaks a mile out. What you call flood is seiche and rain.\n\nHowever, I keep finding salt on the stave in the upstairs cabinet, crystals in the grooves of a dried G. That salt is not tidal. It is breath, sweat, and a leaking skylight.\n\nThe glass conservatory sits above any theoretical waterline. If it exists \u2014 and the surveyor will deny the walls \u2014 it cannot have been drowned. The interval of a fifth I measured in the harbor boom (fundamental 55 Hz, fifth at 82.5) is a harbor fact, not a chamber fact. Do not import my numbers into their romance.\n\nAt dusk I watch the empty beach. No tide. The metronome people keep writing about is inland, dry, and none of my business.\n",
+      "mtimeMs": 1772064000000
+    },
+    {
+      "path": "02-tuner.md",
+      "text": "# The Tuner's Log\n\nCalibration, 12 August. Fork: steel. Reference: house pitch of A440.\n\nThe silver metronome at dusk is not a poem. It is a sixty-beat mechanical standard parked on the north sill so the evening light hits the pendulum and the beat is visible to the whole chamber. I set the cello to A440, then stacked the interval of a fifth (ratio 3:2) to E. Beating: none. Good.\n\nSalt on the stave is a maintenance problem, not a metaphor. Chloride films flatten harmonics. Wipe the bridges. Do not romanticize corrosion.\n\nSilence is never an instrument. Silence is a defect in the room: a gap in the spectrum, a player late, a string not speaking. If the spectrogram goes dark in the singing band, mark the bar and recast the part.\n\nThe inland lighthouse is a timing pylon. It is not at sea. Its flash is 1.2 seconds, which I use when the metronome is being cleaned. Anyone who retunes this house to A432 is vandalizing the archive.\n",
+      "mtimeMs": 1772064000000
+    },
+    {
+      "path": "03-lightkeeper.md",
+      "text": "# The Lightkeeper\n\nThere is no inland lighthouse. Forget the inland lighthouse. I keep the real one, and it stands in salt, not wheat. The beam does not care about your bars.\n\nThey sent me a note about the house pitch of A440. The house never tunes to A440. We keep A432 because the foghorn already occupies the beating that 440 would make against the generator. I have written this on the door. They paint over the door.\n\nThe silver metronome at dusk is a lie they tell visitors. Nothing silver survives the spray. What they saw was a tin can swinging on a string.\n\nI do hear, some nights, a chamber of unplayed notes \u2014 the wind in the lantern gallery making a stack of empty fifths. That is the only orchestra I trust. Come out here. Stop inventing chapels in fields.\n",
+      "mtimeMs": 1772064000000
+    }
+  ]
+}
