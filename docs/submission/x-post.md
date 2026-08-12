@@ -1,6 +1,6 @@
 # X draft (paste as-is after the video is on the post)
 
-Attach the 90s video (AO Kanban first, then Lost Movement).
+Attach `lost-movement-demo.mp4` (Desktop or `docs/submission/`). AO Kanban first, then Tonight’s attic. Voice is yours.
 
 Required: `#agentorchestrator` `@aoagents` `@agent_wrapper`
 

@@ -43,16 +43,22 @@ export function mountMuseum(root: HTMLElement): void {
     if (reduce) {
       typed = target;
       const node = root.querySelector("[data-excerpt]");
-      if (node) node.textContent = typed;
+      if (node) {
+        node.textContent = typed;
+        node.classList.add("is-done");
+      }
       return;
     }
     let i = 0;
     const tick = (): void => {
       typed = target.slice(0, i);
       const node = root.querySelector("[data-excerpt]");
-      if (node) node.textContent = typed;
+      if (node) {
+        node.textContent = typed;
+        if (i >= target.length) node.classList.add("is-done");
+      }
       i += 1;
-      if (i <= target.length) window.setTimeout(tick, 18);
+      if (i <= target.length) window.setTimeout(tick, 22);
     };
     tick();
   };
@@ -64,12 +70,14 @@ export function mountMuseum(root: HTMLElement): void {
       <section class="foyer" data-testid="state-foyer">
         <p class="tag">${date}</p>
         <h1 class="lockup">Lost Movement</h1>
-        <p class="tag">A museum of the work you never finished</p>
+        <hr class="rule" />
+        <p class="tag lede">A museum of the work you never finished</p>
         <button type="button" data-testid="btn-attic" id="attic">Tonight’s attic</button>
         <label class="drop">Or hang a local folder
           <input id="folder" type="file" webkitdirectory multiple class="sr-only" />
         </label>
-        ${show ? `<p class="drop">Last exhibition still on the wall.</p><button type="button" id="resume">Resume</button>` : ""}
+        ${show ? `<p class="drop">Last exhibition still on the wall.</p><button type="button" class="ghost" id="resume">Resume</button>` : ""}
+        <p class="hint">Space opens the door · arrows walk · P for the program</p>
       </section>
     `;
     root.querySelector("#attic")?.addEventListener("click", () => openAttic(tonightAttic()));
@@ -101,8 +109,8 @@ export function mountMuseum(root: HTMLElement): void {
       return;
     }
     root.innerHTML = `
-      <section class="room" data-testid="room-stage">
-        <div>
+      <section class="room is-lit" data-testid="room-stage">
+        <div class="stage">
           <div class="lamp" aria-hidden="true"></div>
           <article class="plaque" data-testid="plaque">
             <p class="index">${roman(index)} / ${roman(show!.exhibits.length - 1)}</p>
@@ -135,7 +143,8 @@ export function mountMuseum(root: HTMLElement): void {
       .map(
         (exhibit, i) => `
         <article class="entry">
-          <h2>${roman(i)}. ${escapeHtml(exhibit.plaqueTitle)}</h2>
+          <span class="entry-num">${roman(i)}</span>
+          <h2>${escapeHtml(exhibit.plaqueTitle)}</h2>
           <p>${escapeHtml(exhibit.plaqueDateLine)} — ${escapeHtml(exhibit.coda)}</p>
           <p>${escapeHtml(exhibit.excerpt)}</p>
         </article>`,
@@ -170,7 +179,8 @@ export function mountMuseum(root: HTMLElement): void {
     root.innerHTML = `
       <section class="colophon foyer">
         <h1 class="lockup">Colophon</h1>
-        <p>Files hang here because they are old, named like drafts, incomplete, or unmentioned by their siblings. Nothing is uploaded. The score is a weighted sum you can read on the plaque.</p>
+        <p>Files hang here because they are old, named like drafts, incomplete, or unmentioned by their siblings. Nothing is uploaded. Age, names, broken endings, and silence from sibling files decide what hangs. Reasons sit on the plaque.</p>
+        <p>Hung in Agent Orchestrator — not a clone of it. The board is how this house was built.</p>
         <button type="button" id="home">Foyer</button>
       </section>
     `;

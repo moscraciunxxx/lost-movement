@@ -11,5 +11,5 @@ Lost Movement hangs the drafts you abandoned. Click Tonight’s attic. A filamen
 Built *in* Agent Orchestrator (aoagents.dev). The demo video shows the Kanban and three live sessions. Lost Movement is not an AO clone.
 
 **GitHub:** https://github.com/moscraciunxxx/lost-movement  
-**Demo video:** attach the 90s tape (AO board first 12 seconds)  
+**Demo video:** attach `docs/submission/lost-movement-demo.mp4` (also on Desktop). Opens on the AO Kanban, then Tonight’s attic. Voice is Vitalie’s bank.  
 **X or LinkedIn:** paste after posting
